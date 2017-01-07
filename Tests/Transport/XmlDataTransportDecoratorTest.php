@@ -31,7 +31,7 @@ class XmlDataTransportDecoratorTest extends \PHPUnit_Framework_TestCase
             array('xmlData' => $records)
         );
 
-        $this->assertEquals(
+        $this->assertXmlStringEqualsXmlString(
             <<<XML
 <?xml version="1.0"?>
 <Leads><row no="1"><FL val="First Name">Christiaan</FL><FL val="Last Name">Baartse</FL><FL val="Due Date">01/01/2012</FL></row><row no="2"><FL val="First Name">Stefan</FL></row></Leads>
